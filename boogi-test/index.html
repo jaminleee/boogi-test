@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph 미리보기 정보 노출(썸네일 등) -->
+    <meta property="og:image" content="./img/image-0.png">
+    <meta property="og:title" content="HSU-LikeLion-MBTI">
+    <meta property="og:description" content="한성대학교 멋쟁이사자처럼 11기 운영진이 제작한 나의 부기 유형 알아보기 테스트 입니다!">
+    <meta property="og:type" content="website">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <title>상상부기 프렌즈 유형 테스트</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="./css/result.css">
+
+        <!-- 카카오 공유하기 -->
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script>
+        Kakao.init('코드입력');
+        Kakao.isInitialized();
+        </script>
+</head>
+<body>
+    <section id="main" class="my-5 py-5 px-4 mx-auto">
+        <div class="col-lg-3 col-md-4 col-sm-4 mx-auto mb-3">
+            <img src="./img/copyright_logo.png" alt="hsu_logo_img" class="img-fluid" />
+        </div>
+        <h1 class="title">나의
+            <span style="color:#124098">부기부기</span> 유형은?
+        </h1>
+        <div class="col-lg-3 col-md-5 col-sm-7 mx-auto mt-5">
+            <img src="./img/start_img.png" alt="start_img" class="img-fluid" />
+        </div>
+        <p class="pretendard mt-5">
+            <span style="color:#FF7710">한성대학교 멋쟁이사자처럼 11기 운영진</span>이 제작한</br>
+            나의 <span style="color:#124098">부기부기</span> 유형 알아보기!
+        </p>
+        <button type="button" class="startBtn btn jalnan" onclick="js:start()">START</button>
+        <div>
+            <button type="button" class="applyBtn btn jalnan mt-3" onclick="window.open('https://likelionhsu.oopy.io/')">멋쟁이사자처럼 11기 지원하기</button>
+        </div>
+        <div class="share ">
+            <div class="share_text mt-3">공유하기</div>
+            <img class="facebook col-lg-1 col-md-1 col-sm-2 img-fluid" src="img/facebook.png"
+                onclick="js:shareFacebook()">
+            <img class="kakao col-lg-1 col-md-1 col-sm-2 img-fluid" src="img/kakao.png" onclick="js:sendLink()">
+            <img class="linkcopy col-lg-1 col-md-1 col-sm-2 img-fluid" src="img/linkcopy.png" onclick="js:clip()">
+            <!-- <div class="share_text mt-3">지원링크</div> -->
+           
+        </div>
+
+    </section>
+    <section id="qna" class="my-5 py-5 px-4 mx-auto">
+        <div class="col-lg-2 col-md-3 col-sm-3 mx-auto mb-3">
+            <img src="./img/copyright_logo.png" alt="hsu_logo_img" class="img-fluid" />
+        </div>
+        <div class="jalnan qna_title1 mx-auto mt-3">나의</div>
+        <div class="jalnan qna_title1 mx-auto">
+            <span style="color:#124098">부기부기</span> 유형은?
+        </div>
+
+        <div class="status mx-auto mt-5">
+            <div class="statusBar">
+
+            </div>
+            <div class="countStatus">
+
+            </div>
+
+        </div>
+        <div class="qBox my-5 py-3 mx-auto">
+
+        </div>
+        <div class="aBox my-5 py-3 mx-auto">
+
+        </div>
+
+    </section>
+    <section id="result" class="mx-auto my-5 py-5 px-4">
+        <div class="col-lg-2 col-md-3 col-sm-3 mx-auto mb-3">
+            <img src="./img/copyright_logo.png" alt="hsu_logo_img" class="img-fluid" />
+        </div>
+        <h5 class="jalnan"> 나의 유형은?</h5>
+        <div class="Gmarket">
+            <div class="resultIntro">
+
+            </div>
+            <div class="resultName">
+
+            </div>
+        </div>
+        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 mx-auto">
+
+        </div>
+        <div class="resultDesc">
+            <div class="resultDescTitle1">
+
+            </div>
+            <div class="resultDesc1">
+
+            </div>
+            <div class="resultDescTitle2">
+
+            </div>
+            <div class="resultDesc2">
+
+            </div>
+        </div>
+        <div>
+            <button type="button" class="applyBtn btn jalnan mt-5" onclick="window.open('https://likelionhsu.oopy.io/')">멋쟁이사자처럼 11기 지원하기</button>
+        </div>
+        <div class="share ">
+            <div class="share_text mt-3">공유하기</div>
+            <img class="facebook col-lg-1 col-md-1 col-sm-2 img-fluid" src="img/facebook.png"
+                onclick="js:shareFacebook()">
+            <img class="kakao col-lg-1 col-md-1 col-sm-2 img-fluid" src="img/kakao.png" onclick="js:sendLink()">
+            <img class="linkcopy col-lg-1 col-md-1 col-sm-2 img-fluid" src="img/linkcopy.png" onclick="js:clip()">
+        </div>
+
+    </section>
+    <script src="./js/data.js"></script>
+    <script src="./js/mbti.js"></script>
+    <script src="./js/share.js"></script>
+
+    
+
+<footer class="copyright">
+    <img src="./img/copyright_logo.png" class="copyright_logo mx-auto" alt="footer
+    _logo_img" class="img-fluid mt-15">
+</footer>
+</body>
+</html>
