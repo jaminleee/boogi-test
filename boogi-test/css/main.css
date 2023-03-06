@@ -3,7 +3,7 @@
     width: 80%;
 }
 p{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .title{
@@ -28,10 +28,6 @@ p{
 }
 
 
-.startBtn >.text{
-    font-size: 20px;
-    
-}
 
 .startBtn:hover, .startBtn:active {
     padding: 20px 30px;
