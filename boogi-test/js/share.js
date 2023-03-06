@@ -9,8 +9,8 @@ function sendLink() {
     Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
-            title: '나와 닮은 상상부기 프렌즈는?',
-            description: '#MBTI #상상부기 #한성냥이 #꼬꼬꾸꾸 #상찌 # #HSU #멋사 #운영진수고했다',
+            title: '나의 부기부기 유형은?',
+            description: '#상상부기 #멋쟁이사자처럼11기 #새내기부기 #고수 부기 #화석 부기 #HSU #운영진수고했다',
             imageUrl: './img/thumbnail.png',
             link: {
                 mobileWebUrl: 'https://hsu-likelion-mbti.netlify.app/',

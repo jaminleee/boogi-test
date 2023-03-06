@@ -47,7 +47,7 @@ p{
 
 .applyBtn{
     box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.2);
-  padding: 20px 30px;
+  padding: 20px 20px;
     border-radius: 40px;
     background-color: #FF7710;
     color: white;
@@ -58,7 +58,7 @@ font-size: 15px;
 
 
 .applyBtn:hover, .applyBtn:active {
-    padding: 20px 30px;
+    padding: 20px 20px;
     border-radius: 40px;
    
     background-color: white;
