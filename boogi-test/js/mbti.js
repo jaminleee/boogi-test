@@ -47,13 +47,13 @@ function addAnswer(answerText,qIdx,idx){
 
 function calResult(){
     var result;
-    if (select[1] <= 2) {
+    if (select[1] <= 3) {
         result = 0;
     }
     else if(select[1]<=8){
         result = 1;
     }
-    else if(select[1])
+    else if(select[1]>=9)
         result = 2;
     return result; 
 
